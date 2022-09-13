@@ -1,0 +1,101 @@
+{
+    "name": "Alabaster",
+    "author": "Nikita Prokopov",
+    "variables":
+    {
+        "active":    "#007ACC",
+        "selection": "#BFDBFE",
+        "selection": "#DDF0FF33",
+        "selection": "royalblue",
+        "blue":      "#68A9EB",
+        "cyan":      "#BCDBFF",
+        "green":     "#8BB664",
+        "red":       "#E5AD94F5",
+        "invalid":   "#FD5FF1",
+        "magenta":   "#7A3E9D",
+        "grey":      "#B0B0B0",
+        "orange":    "#FFBC5D"
+    },
+    "globals":
+    {
+        "foreground":                  "#F0F0F0",
+        "background":                  "#182227",
+        "caret":                       "var(grey)",
+        "block_caret":                 "var(grey)",
+        "line_highlight":              "#FFFFFF1A",
+        "misspelling":                 "var(red)",
+        "selection":                   "var(selection)",
+        "selection_foreground":        "white",
+        "selection_border_width":      "1",
+        "inactive_selection":          "#E0E0E0",
+        "selection_corner_radius":     "2",
+        "highlight":                   "var(selection)",
+        "find_highlight_foreground":   "white",
+        "find_highlight":              "var(selection)",
+        "brackets_options":            "bold foreground underline",
+        "brackets_foreground":         "white",
+        "bracket_contents_options":    "bold foreground underline",
+        "bracket_contents_foreground": "white",
+        "tags_options":                "foreground",
+        "tags_foreground":             "var(active)"
+    },
+    "rules":
+    [
+        {"name":       "Comment",
+         "scope":      "comment, punctuation.definition.comment",
+         "foreground": "var(red)"},
+
+        {"name":       "String",
+         "scope":      "string",
+         "foreground": "var(green)"},
+
+        {"name":       "Escapes",
+         "scope":      "constant.character.escape, constant.other.placeholder",
+         "foreground": "var(grey)"},
+
+        {"name":       "Punctuation",
+         "scope":      "punctuation",
+         "foreground": "var(grey)"},
+
+        {"name":       "Constants",
+         "scope":      "constant",
+         "foreground": "var(blue)"},
+
+        {"name":       "Definitions",
+         "scope":      "entity.name",
+         "foreground": "var(cyan)"},
+
+        {"name":       "Mistakes",
+         "scope":      "invalid",
+         "foreground": "var(red)",
+         "background": "color(var(red) alpha(0.2))"},
+
+        {"scope": "markup.heading",
+         "font_style": "bold"},
+
+        {"scope": "markup.italic",
+         "font_style": "italic"},
+         
+        {"scope": "markup.bold",
+         "font_style": "bold"},
+         
+        {"scope": "markup.underline",
+         "font_style": "underline"},
+
+
+        {"scope": "markup.inserted",
+         "foreground": "hsl(100, 50%, 50%)"},
+
+        {"scope": "markup.deleted",
+         "foreground": "hsl(2, 65%, 50%)"},
+         
+        {"scope": "markup.changed",
+         "foreground": "hsl(30, 85%, 50%)"},
+
+        {"scope": "markup.ignored",
+         "foreground": "#aaa"},
+
+        {"scope": "markup.untracked",
+         "foreground": "#aaa"}
+    ]
+}
