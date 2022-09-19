@@ -1,11 +1,9 @@
 {
-    "name": "Alabaster",
-    "author": "Nikita Prokopov",
+    "name": "CodeSchool Minimal",
+    "author": "Bernik",
     "variables":
     {
         "active":    "#007ACC",
-        "selection": "#BFDBFE",
-        "selection": "#DDF0FF33",
         "selection": "royalblue",
         "blue":      "#68A9EB",
         "cyan":      "#BCDBFF",
