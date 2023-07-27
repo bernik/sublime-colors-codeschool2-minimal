@@ -4,7 +4,7 @@
     "variables":
     {
         "active":    "#007ACC",
-        "selection": "royalblue",
+        "selection": "#3758BD",
         "blue":      "#68A9EB",
         "cyan":      "#BCDBFF",
         "green":     "#8BB664",
@@ -18,8 +18,8 @@
     {
         "foreground":                  "#F0F0F0",
         "background":                  "#182227",
-        "caret":                       "var(grey)",
-        "block_caret":                 "var(grey)",
+        "caret":                       "var(selection)",
+        "block_caret":                 "var(selection)",
         "line_highlight":              "#FFFFFF1A",
         "misspelling":                 "var(red)",
         "selection":                   "var(selection)",
